@@ -4,10 +4,12 @@ const fibo = (n) => {
 return fibo(n-2)+fibo(n-1)
 };
 
-/*const ryadFibo = (x) => {
-  if (x === 0) {
-    console.log(fibo(x))
-  } x-=1;
-  console.log(fibo(x))
-}; 
-console.log(ryadFibo(3)) */
+const fiboRow = (limit) => {
+let x=0; 
+do { 
+  console.log(fibo(x));
+  x++;}
+while (fibo(x) <= limit)
+}
+
+console.log(fiboRow(100));
